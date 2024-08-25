@@ -15,7 +15,7 @@ const Avatar: React.FC<AvatarProps> = ({
   backgroundColor = "bg-blue-600",
   textColor = "text-white",
   shape = "circle",
-  fontFamily = "font-sans", // Default font
+  fontFamily = "font-sans",
 }) => {
   const getInitials = (name: string) => {
     const nameArray = name.split(" ");
@@ -40,7 +40,7 @@ const Avatar: React.FC<AvatarProps> = ({
       style={{
         width: `${size}px`,
         height: `${size}px`,
-        fontFamily: fontFamily, // Apply custom font
+        fontFamily: fontFamily,
       }}
     >
       {initials}
